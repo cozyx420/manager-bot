@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pytest_cache/
+.venv/
+.venv*/
+env/
+venv/
+pip-wheel-metadata/
+
+# Env/Secrets
+.env
+*.env
+
+# Build/Dist
+build/
+dist/
+*.egg-info/
+
+# Tests
+.coverage
+htmlcov/
+.tox/
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.log
+docker-data/
+# Falls du Images/Artefakte exportierst:
+*.tar
+
+# Laufzeit
+*.sqlite3
