@@ -10,6 +10,11 @@ from fastapi.responses import FileResponse
 
 app = FastAPI(title="manager-bot", version="0.1.0")
 
+app.mount("/ui", StaticFiles(directory="ui", html=True), name="ui")
+
+@app.get("/")
+async def ui_home():
+  return FileResponse("ui/index.html")
 
 @app.get("/healthz")
 async def healthz():
