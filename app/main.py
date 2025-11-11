@@ -4,6 +4,9 @@ from typing import Optional, List
 from .schemas import TaskRequest, TaskResponse, StepResult, ResearchPayload
 from .settings import settings
 from .clients.researcher import ResearcherClient
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+
 
 app = FastAPI(title="manager-bot", version="0.1.0")
 
