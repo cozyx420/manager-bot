@@ -9,13 +9,9 @@
     <title>Aigents Manager</title>
     <link rel="stylesheet" href="manager.css" />
     <meta name="color-scheme" content="light dark" />
-    <script>
-      // API-Endpunkt konfigurieren (Default: gleiches Origin + /v1/chat)
-      // Wenn du ein Gateway auf Port 8000 hast: 'http://localhost:8000/v1/chat'
-      window.AIGENTS_CONFIG = {
-        API_URL: "/v1/chat"
-      };
-    </script>
+
+    <script>window.AIGENTS_CONFIG={API_URL:"http://localhost:8000/v1/chat"};</script>
+
   </head>
   <body>
     <header class="topbar">
